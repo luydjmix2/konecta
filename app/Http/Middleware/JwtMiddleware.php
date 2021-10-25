@@ -4,11 +4,9 @@ namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Closure;
-use JWTAuth;
+use Tymon\JWTAuth\Facades\JWTAuth;
 use Exception;
-use Tymon\JWTAuth\Facades\JWTAuth as FacadesJWTAuth;
 use Tymon\JWTAuth\Http\Middleware\BaseMiddleware;
-use Tymon\JWTAuth\JWTAuth as JWTAuthJWTAuth;
 
 class JwtMiddleware extends BaseMiddleware
 {
