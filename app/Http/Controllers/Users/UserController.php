@@ -105,7 +105,7 @@ class UserController extends Controller
             'profile' => $request->get('profile'),
             'password' => Hash::make($request->get('password')),
         ]);
-        dd($user);
+        // dd($user);
         $respuesta = array("mensaje" => "ya puede realizar cualquier accion.");
         return response()->json(compact('user', 'respuesta'), 201);
     }
